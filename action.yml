@@ -1,12 +1,13 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
+name: 'GitHub Actions Debugger'
+description: 'Output all environment variables for debug purpose'
+author: 'Sebastian Rockwell'
 inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  varname:
+    description: 'More variable to explore'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.myInput }}
+    - ${{ inputs.varname }}

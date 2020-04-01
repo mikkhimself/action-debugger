@@ -1,6 +1,9 @@
 name: 'GitHub Actions Debugger'
 description: 'Output all environment variables for debug purpose'
 author: 'Sebastian Rockwell'
+branding:
+  icon: user-check
+  color: orange
 inputs: 
   varname:
     description: 'More variable to explore'

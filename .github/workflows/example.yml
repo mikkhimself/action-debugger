@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  trial_job:
+    runs-on: ubuntu-latest
+    name: Try to use action-debugger
+    steps:
+      - uses: 98w/action-debugger@v0.1
+      - name: Byebye
+        shell: bash
+        run: |
+          echo "Done!"
